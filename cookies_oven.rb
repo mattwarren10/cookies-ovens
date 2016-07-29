@@ -9,6 +9,12 @@ class Oven
 	end
 
 	def take_out_of_oven
+		minutes = 25
+		start_time = Time.now
+		seconds = minutes * 60
+		end_time = start_time + seconds 
+		puts start_time
+		puts end_time
 		@in_oven.delete_at(0)
 	end
 end
